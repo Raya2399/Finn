@@ -24,12 +24,12 @@ global.maxwarn = "3"; // Peringatan maksimum Warn
 
 
 // APIKEY INI WAJIB UNTUK DI ISI! //
-global.btc = "YOUR_APIKEY_HERE";
+global.btc = "alfinphoenixaltair";
 
 
 
 // AKSESKEY INI DI ISI JIKA DIPERLUKAN JADI TIDAK WAJIB DI ISI! (e.g suno ai (ai music ) & fitur prem lainnya//
-global.aksesKey = "YOUR_AKSESKEY_HERE";
+global.aksesKey = "alfinphoenix";
 
 // Tidak boleh diganti atau di ubah
 global.APIs = {
