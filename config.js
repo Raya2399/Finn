@@ -3,22 +3,22 @@ const __filename = import.meta.filename;
 process.env.TZ = 'Asia/Jakarta';
 
 // Pengaturan Bot disini Semua
-global.owner = ["62895331520602"]; // wajib di isi tidak boleh kosong
-global.mods = ["62895331520602"]; // wajib di isi tidak boleh kosong
-global.prems = ["62895331520602"]; // wajib di isi tidak boleh kosong
-global.nameowner = "Tio"; // wajib di isi tidak boleh kosong
-global.numberowner = "62895331520602"; // wajib di isi tidak boleh kosong
-global.mail = "support@tioprm.eu.org"; // wajib di isi tidak boleh kosong
+global.owner = ["6281345407953"]; // wajib di isi tidak boleh kosong
+global.mods = ["6281345407953"]; // wajib di isi tidak boleh kosong
+global.prems = ["6281345407953"]; // wajib di isi tidak boleh kosong
+global.nameowner = "Finn"; // wajib di isi tidak boleh kosong
+global.numberowner = "6281345407953"; // wajib di isi tidak boleh kosong
+global.mail = "phoenixalfin@gmail.com"; // wajib di isi tidak boleh kosong
 global.gc = "https://chat.whatsapp.com/I5RpePh2b5u37OyFjzCNTr"; // wajib di isi tidak boleh kosong
-global.instagram = "https://instagram.com/prm2.0"; // wajib di isi tidak boleh kosong
-global.wm = "© BOTCAHX"; // isi nama bot atau nama kalian
+global.instagram = "https://instagram.com/al_vin.233"; // wajib di isi tidak boleh kosong
+global.wm = "© Fin Md"; // isi nama bot atau nama kalian
 global.wait = "_*Tunggu sedang di proses...*_"; // ini pesan simulasi loading
 global.eror = "_*Server Error*_"; // ini pesan saat terjadi kesalahan
 global.stiker_wait = "*⫹⫺ Stiker sedang dibuat...*"; // ini pesan simulasi saat loading pembuatan sticker
 global.thumb = "https://telegra.ph/file/3a34bfa58714bdef500d9.jpg";
-global.packname = "Made With"; // watermark stikcker packname
-global.author = "Bot WhatsApp"; // watermark stikcker author
-global.maxwarn = "5"; // Peringatan maksimum Warn
+global.packname = "Fin Md By Fin Phoenix"; // watermark stikcker packname
+global.author = "Tiktok : @alvin_ch1\nIg : @al_vin.233\nFb : Alfin Phoenix Altairs"; // watermark stikcker author
+global.maxwarn = "3"; // Peringatan maksimum Warn
 
 
 
