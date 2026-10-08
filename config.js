@@ -16,8 +16,16 @@ global.wait = "_*Tunggu sedang di proses...*_"; // ini pesan simulasi loading
 global.eror = "_*Server Error*_"; // ini pesan saat terjadi kesalahan
 global.stiker_wait = "*⫹⫺ Stiker sedang dibuat...*"; // ini pesan simulasi saat loading pembuatan sticker
 global.thumb = "https://r0.image2url.com/images/1755274480773-da0ca085-81eb-40b9-98c2-d8abff9150c3.jpg";
-global.packname = "Fin Md By Fin Phoenix"; // watermark stikcker packname
-global.author = "Tiktok : @alvin_ch1\nIg : @al_vin.233\nFb : Alfin Phoenix Altairs"; // watermark stikcker author
+global.packname = "Fin Md Made By"; // watermark stikcker packname
+global.maxwarn = "3"; // Peringatan maksimum Warn
+import getRandomAuthor from './plugins/sticker-randomauthor.js'; 
+
+Object.defineProperty(global, 'author', {
+    get: function() {
+        return getRandomAuthor();
+    },
+    configurable: true 
+});
 global.maxwarn = "3"; // Peringatan maksimum Warn
 
 
