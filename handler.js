@@ -1326,10 +1326,26 @@ export default {
                         .replace('@desc', groupMetadata.desc?.toString() || '')
                         .replace('@user', '@' + jid.split('@')[0])
 
-                    await this.sendMessage(id, {
-                        text,
-                        mentions: [jid]
-                    })
+                    try {
+                        const now = new Date()
+                        const dateStr = `${String(now.getDate()).padStart(2, '0')}-${String(now.getMonth() + 1).padStart(2, '0')}-${now.getFullYear()}`
+                        const memberCount = groupMetadata.participants?.length || 0
+                        const userName = await this.getName(jid).catch(() => jid.split('@')[0])
+                        const gpName = groupMetadata.subject || 'Group'
+                        const canvasEndpoint = isAdd ? 'welcome4' : 'goodbye4'
+                        const canvasUrl = `https://api.botcahx.eu.org/api/maker/${canvasEndpoint}?name=${encodeURIComponent(userName)}&gpname=${encodeURIComponent(gpName)}&date=${encodeURIComponent(dateStr)}&member=${memberCount}&apikey=${btc}`
+                        
+                        await this.sendMessage(id, {
+                            image: { url: canvasUrl },
+                            caption: text,
+                            mentions: [jid]
+                        })
+                    } catch (e) {
+                        await this.sendMessage(id, {
+                            text,
+                            mentions: [jid]
+                        })
+                    }
                 }
             }
             break           
@@ -1416,7 +1432,7 @@ global.dfail = (type, m, conn) => {
         private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
         admin: 'Perintah ini hanya untuk *Admin* grup!',
         botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Mansur.16*',
+        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar alfin.16*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return m.reply(msg)
